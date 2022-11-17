@@ -3,7 +3,7 @@ import { FiUser } from "react-icons/fi"
 const Account = () => {
   return (
     <div>
-      <button className="btn grid place-items-center">
+      <button aria-label="Account" className="btn grid place-items-center">
         <FiUser size={26} />
       </button>
     </div>

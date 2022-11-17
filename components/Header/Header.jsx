@@ -1,7 +1,7 @@
 import Link from "next/link"
 import React from "react"
 import Account from "./Account"
-import Cart from "./Cart"
+import Bag from "./Bag"
 import Menu from "./Menu"
 import Image from "next/image"
 import { BiSearch } from "react-icons/bi"
@@ -28,9 +28,9 @@ const MobileSearchbar = () => (
       placeholder="Search"
       className="bg-neutral-100 h-[44px] rounded-full w-full px-3 dark:bg-neutral-800 focus:outline-none focus:ring-0 focus:border-green-200 border border-transparent"
     />
-    <div className="absolute  right-0  h-[44px] w-[44px] top-0 flex items-center justify-center rounded-r-md">
+    <button aria-label="Search" className="absolute  right-0  h-[44px] w-[44px] top-0 flex items-center justify-center rounded-r-md">
       <BiSearch size={26} />
-    </div>
+    </button>
   </div>
 )
 
@@ -41,9 +41,9 @@ const Searchbar = () => (
       placeholder="Search"
       className="bg-neutral-100 h-[44px] rounded-full w-full px-3 dark:bg-neutral-800 focus:outline-none focus:ring-0 focus:border-green-200 border border-transparent"
     />
-    <div className="absolute  right-0  h-[44px] w-[44px] top-0 flex items-center justify-center rounded-r-md">
+    <button aria-label="Search" className="absolute  right-0  h-[44px] w-[44px] top-0 flex items-center justify-center rounded-r-md">
       <BiSearch size={26} />
-    </div>
+    </button>
   </div>
 )
 
@@ -71,7 +71,7 @@ const Header = () => {
         <NavLinks />
         <Searchbar />
         <Account />
-        <Cart />
+        <Bag />
       </div>
       <div className="max-w-7xl mx-auto px-4 flex items-center pb-4 relative md:hidden">
         <MobileSearchbar />

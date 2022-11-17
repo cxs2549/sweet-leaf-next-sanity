@@ -10,6 +10,7 @@ const Menu = () => {
     <div ref={ref} className="flex-1 xl:hidden relative">
       <button
         onClick={() => setOpen(true)}
+        aria-label="Menu"
         className="btn grid place-items-center"
       >
         <HiMenuAlt4 size={26} />
