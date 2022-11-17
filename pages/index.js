@@ -6,6 +6,11 @@ const Homepage = () => {
     <>
       <Head>
         <title>Sweet Leaf</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta
+          name="description"
+          content="This is a cannabis dispensary online store."
+        ></meta>
       </Head>
     </>
   )
