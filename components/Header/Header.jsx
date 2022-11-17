@@ -3,10 +3,11 @@ import React from "react"
 import Account from "./Account"
 import Cart from "./Cart"
 import Menu from "./Menu"
+import Image from "next/image"
 
 const Logo = () => (
   <Link href={`/`} className="absolute left-1/2 -translate-x-1/2">
-    <img src="/logo.png" alt="Sweet Leaf Logo" className="w-10" />
+    <Image height={44} width={44} src="/logo.png" alt="Sweet Leaf Logo" className="w-10" />
   </Link>
 )
 
