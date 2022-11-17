@@ -1,8 +1,12 @@
-import React from 'react'
-
+import React from "react"
+import { FiUser } from "react-icons/fi"
 const Account = () => {
   return (
-    <div>Account</div>
+    <div>
+      <button className="btn grid place-items-center">
+        <FiUser size={26} />
+      </button>
+    </div>
   )
 }
 

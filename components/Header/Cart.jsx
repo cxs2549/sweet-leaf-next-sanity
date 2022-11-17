@@ -1,8 +1,12 @@
-import React from 'react'
-
+import React from "react"
+import { BsBag } from "react-icons/bs"
 const Cart = () => {
   return (
-    <div>Cart</div>
+    <div>
+      <button className="btn grid place-items-center">
+        <BsBag size={26} />
+      </button>
+    </div>
   )
 }
 
