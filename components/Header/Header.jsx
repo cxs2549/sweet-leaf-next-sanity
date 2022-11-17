@@ -6,7 +6,7 @@ import Menu from "./Menu"
 
 const Logo = () => (
   <Link href={`/`} className="absolute left-1/2 -translate-x-1/2">
-    Logo
+    <img src="/logo.png" alt="Sweet Leaf Logo" className="w-10" />
   </Link>
 )
 

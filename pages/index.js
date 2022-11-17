@@ -1,5 +1,6 @@
 import React from "react"
 import Head from "next/head"
+import { client } from "../lib/client"
 
 const Homepage = () => {
   return (
@@ -12,8 +13,18 @@ const Homepage = () => {
           content="This is a cannabis dispensary online store."
         ></meta>
       </Head>
+     
     </>
   )
 }
+
+// export const getStaticProps = async () => {
+//   const logo = await client.fetch(`
+//     *[_type == 'asset']`)
+
+//   return {
+//     props: { logo },
+//   }
+// }
 
 export default Homepage
