@@ -28,7 +28,7 @@ const MobileSearchbar = () => (
       placeholder="Search"
       className="bg-neutral-100 h-[44px] rounded-full w-full px-3 dark:bg-neutral-800 focus:outline-none focus:ring-0 focus:border-green-200 border border-transparent"
     />
-    <button aria-label="Search" className="absolute  right-0  h-[44px] w-[44px] top-0 flex items-center justify-center rounded-r-md">
+    <button aria-label="Search" className="absolute  right-0  h-[44px] w-[44px] top-0 flex items-center justify-center rounded-r-md opacity-70">
       <BiSearch size={26} />
     </button>
   </div>
