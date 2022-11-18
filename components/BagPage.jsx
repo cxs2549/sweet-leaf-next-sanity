@@ -1,8 +1,8 @@
-import React, {useState, useEffect} from "react"
 import Layout from "./Layout"
 import { IoStorefrontOutline } from "react-icons/io5"
 import { MdClose } from "react-icons/md"
 import { useStateContext } from "../context/StateContext"
+
 const EmptyBag = () => (
   <div
     id="cartCard"
@@ -71,8 +71,6 @@ const NotEmptyBag = () => (
 )
 
 const Bag = () => {
-  const [color, setColor] = useState('blue')
-  useEffect(() => setColor('red'), [])
   const { signedIn } = useStateContext()
   return <Layout>{signedIn ? <NotEmptyBag /> : <EmptyBag />}</Layout>
 }

@@ -151,58 +151,7 @@ export default function Example() {
               </div>
             </div>
           </div>
-          <div className="mt-12 xl:mt-0">
-            <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">Language &amp; Currency</h3>
-            <form className="mt-4 sm:max-w-xs">
-              <fieldset className="w-full">
-                <label htmlFor="language" className="sr-only">
-                  Language
-                </label>
-                <div className="relative">
-                  <select
-                    id="language"
-                    name="language"
-                    className="appearance-none block w-full bg-none bg-white border border-gray-300 rounded-md py-2 pl-3 pr-10 text-base text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                    defaultValue="English"
-                  >
-                    <option>English</option>
-                    <option>French</option>
-                    <option>German</option>
-                    <option>Japanese</option>
-                    <option>Spanish</option>
-                  </select>
-                  <div className="pointer-events-none absolute inset-y-0 right-0 px-2 flex items-center">
-                    <ChevronDownIcon className="h-4 w-4 text-gray-400" aria-hidden="true" />
-                  </div>
-                </div>
-              </fieldset>
-              <fieldset className="mt-4 w-full">
-                <label htmlFor="currency" className="sr-only">
-                  Currency
-                </label>
-                <div className="relative">
-                  <select
-                    id="currency"
-                    name="currency"
-                    className="appearance-none block w-full bg-none bg-white border border-gray-300 rounded-md py-2 pl-3 pr-10 text-base text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                    defaultValue="USD"
-                  >
-                    <option>USD</option>
-                    <option>ARS</option>
-                    <option>AUD</option>
-                    <option>CAD</option>
-                    <option>CHF</option>
-                    <option>EUR</option>
-                    <option>GBP</option>
-                    <option>JPY</option>
-                  </select>
-                  <div className="pointer-events-none absolute inset-y-0 right-0 px-2 flex items-center">
-                    <ChevronDownIcon className="h-4 w-4 text-gray-400" aria-hidden="true" />
-                  </div>
-                </div>
-              </fieldset>
-            </form>
-          </div>
+          
         </div>
         <div className="border-t border-gray-200 pt-8 lg:flex lg:items-center lg:justify-between xl:mt-0">
           <div>
