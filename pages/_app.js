@@ -1,16 +1,13 @@
 import "../styles/globals.scss"
 import Footer from "../components/Footer"
 import { StateContext } from "../context/StateContext"
-import dynamic from "next/dynamic"
+import Header from "../components/Header/Header"
 
-const NoSSRHeader = dynamic(() => import("../components/Header/Header"), {
-  ssr: false,
-})
 function MyApp({ Component, pageProps, logo }) {
   return (
     <StateContext>
-      <NoSSRHeader logo={logo} />
-          <Component {...pageProps} />
+      <Header logo={logo} />
+      <Component {...pageProps} />
       <Footer />
     </StateContext>
   )

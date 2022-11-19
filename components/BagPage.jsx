@@ -42,8 +42,8 @@ const NotEmptyBag = () => {
           </div>
           <div className="flex gap-5 px-4 py-4">
             <img
-              src="http://unsplash.it/70/100?random&gravity=center"
-              className="rounded-md"
+              src="http://unsplash.it/100/100?random&gravity=center"
+              className="rounded-md object-cover"
               alt=""
             />
             <div className="w-full">
