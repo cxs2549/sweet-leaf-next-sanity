@@ -7,7 +7,7 @@ const Hero = () => {
       className="py-12 bg-bottom bg-cover flex flex-col md:flex-row md:gap-12 items-center relative justify-center"
     >
        <div className="absolute inset-0">
-        <Image fill="cover" src="/hero.jpg" alt="" />
+        <Image fill="contain" src="/hero.jpg" alt="" />
       </div>
       
       <div className="flex flex-col items-center justify-center z-10">
