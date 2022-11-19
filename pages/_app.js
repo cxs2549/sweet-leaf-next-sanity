@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps, logo }) {
   return (
     <StateContext>
       <NoSSRHeader logo={logo} />
-      <Component {...pageProps} />
+          <Component {...pageProps} />
       <Footer />
     </StateContext>
   )
