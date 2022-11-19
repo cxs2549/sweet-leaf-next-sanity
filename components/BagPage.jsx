@@ -1,3 +1,4 @@
+import Image from "next/image"
 import { IoStorefrontOutline } from "react-icons/io5"
 import { MdClose } from "react-icons/md"
 import { useStateContext } from "../context/StateContext"
@@ -41,9 +42,11 @@ const NotEmptyBag = () => {
             </div>
           </div>
           <div className="flex gap-5 px-4 py-4">
-            <img
-              src="http://unsplash.it/100/100?random&gravity=center"
-              className="rounded-md object-cover"
+            <Image
+              src="/categories/sativa.png"
+              className="rounded-md max-w-[100px] w-full object-cover"
+              width={100}
+              height={100}
               alt=""
             />
             <div className="w-full">

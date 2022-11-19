@@ -49,7 +49,7 @@ const Menu = () => {
               <div className="border-b dark:border-neutral-700 pb-4">
                 <div
                   onClick={() => setOpenCats(true)}
-                  className="h-[66px] flex items-center justify-between px-4"
+                  className="h-[66px] flex items-center justify-between px-4 cursor-pointer"
                 >
                   <h2 className="text-xl font-bold">Categories</h2>
                   <button className="btn grid place-items-center">

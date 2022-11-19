@@ -15,7 +15,7 @@
   ```
 */
 import { ChevronDownIcon } from '@heroicons/react/solid'
-
+import Image from 'next/image'
 const navigation = {
   solutions: [
     { name: 'Store Locator', href: '#' },
@@ -112,7 +112,7 @@ export default function Example() {
           <div className="grid grid-cols-2 gap-8 xl:col-span-4">
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
-                <h3 className="text-sm font-semibold text-gray-400 dark:text-gray-200 tracking-wider uppercase">Quick Links</h3>
+                <h3 className="text-sm font-semibold text-gray-500 dark:text-gray-200 tracking-wider uppercase">Quick Links</h3>
                 <ul role="list" className="mt-4 space-y-4">
                   {navigation.solutions.map((item) => (
                     <li key={item.name}>
@@ -124,7 +124,7 @@ export default function Example() {
                 </ul>
               </div>
               <div className="mt-12 md:mt-0">
-                <h3 className="text-sm font-semibold text-gray-400 dark:text-gray-200 tracking-wider uppercase">Company</h3>
+                <h3 className="text-sm font-semibold text-gray-500 dark:text-gray-200 tracking-wider uppercase">Company</h3>
                 <ul role="list" className="mt-4 space-y-4">
                   {navigation.support.map((item) => (
                     <li key={item.name}>
@@ -138,7 +138,7 @@ export default function Example() {
             </div>
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
-                <h3 className="text-sm font-semibold text-gray-400 dark:text-gray-200 tracking-wider uppercase">Help</h3>
+                <h3 className="text-sm font-semibold text-gray-500 dark:text-gray-200 tracking-wider uppercase">Help</h3>
                 <ul role="list" className="mt-4 space-y-4">
                   {navigation.company.map((item) => (
                     <li key={item.name}>
@@ -155,7 +155,7 @@ export default function Example() {
         </div>
         <div className="border-t border-gray-200 dark:border-neutral-700 pt-8 lg:flex lg:items-center lg:justify-between xl:mt-0">
           <div>
-            <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+            <h3 className="text-sm font-semibold text-gray-500 tracking-wider uppercase">
               Subscribe to our newsletter
             </h3>
             <p className="mt-2 text-base text-gray-500">
@@ -178,7 +178,7 @@ export default function Example() {
             <div className="mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0">
               <button
                 type="submit"
-                className="w-full bg-[#02C970] border border-transparent rounded-md py-2 px-4 flex items-center justify-center text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                className="w-full bg-[#02C970] border border-transparent rounded-md py-2 px-4 flex items-center justify-center text-base font-bold text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
               >
                 Subscribe
               </button>
@@ -194,11 +194,13 @@ export default function Example() {
               </a>
             ))}
           </div>
-          <p className="my-8 text-xs text-gray-400 md:mt-0 md:order-1">
+          <p className="my-8 text-xs text-gray-500 md:mt-0 md:order-1">
             &copy; 2022 CSD for CannaBiz, Inc. All rights reserved.
           </p>
         </div>
-        <div className='h-[400px] footerImage bg-left bg-cover rounded-xl' style={{backgroundImage: 'url(/footer.jpg)'}}></div>
+        <div className='h-[400px] footerImage overflow-hidden rounded-xl relative'>
+          <Image fill="cover" src="/footer.jpg" alt="" />
+        </div>
       </div>
     </footer>
   )
