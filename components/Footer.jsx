@@ -172,13 +172,13 @@ export default function Example() {
               id="email-address"
               autoComplete="email"
               required
-              className="appearance-none min-w-0 w-full bg-white border border-gray-300 py-2 px-4 text-base rounded-md text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:placeholder-gray-400 sm:max-w-xs dark:bg-transparent dark:border-neutral-700"
+              className="appearance-none min-w-0 w-full bg-white border border-gray-300 py-2 px-4 text-base rounded-full text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-green-500 focus:border-green-500 focus:placeholder-gray-400 sm:max-w-xs dark:bg-transparent dark:border-neutral-700"
               placeholder="Enter your email"
             />
             <div className="mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0">
               <button
                 type="submit"
-                className="w-full bg-[#02C970] border border-transparent rounded-md py-2 px-4 flex items-center justify-center text-base font-bold text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                className="w-full bg-[#02C970] border border-transparent rounded-full py-2 px-4 flex items-center justify-center text-base font-bold text-white hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
               >
                 Subscribe
               </button>
@@ -194,13 +194,11 @@ export default function Example() {
               </a>
             ))}
           </div>
-          <p className="my-8 text-xs text-gray-500 md:mt-0 md:order-1">
+          <p className="mt-8 text-xs text-gray-500 md:mt-0 md:order-1">
             &copy; 2022 CSD for CannaBiz, Inc. All rights reserved.
           </p>
         </div>
-        <div className='h-[400px] footerImage overflow-hidden rounded-xl relative'>
-          <Image fill="cover" src="/footer.jpg" alt="" />
-        </div>
+        
       </div>
     </footer>
   )

@@ -80,7 +80,7 @@ const Account = () => {
               <li className="h-[52px]  flex items-center  text-lg group cursor-pointer justify-between">
                 <p className="group-hover:underline font-medium">My Store</p>
                 <p className="text-base text-neutral-500 dark:text-neutral-400  group-hover:underline">
-                  Los Angeles - Koreatown
+                  Los Angeles Koreatown
                 </p>
               </li>
             </ul>

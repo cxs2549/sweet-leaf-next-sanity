@@ -2,6 +2,7 @@ import React from "react"
 import Head from "next/head"
 import { client } from "../lib/client"
 import Hero from "../components/Home/Hero"
+import Deals from "../components/Home/Deals"
 const Homepage = () => {
   return (
     <>
@@ -14,6 +15,7 @@ const Homepage = () => {
         ></meta>
       </Head>
       <Hero />
+      <Deals />
     </>
   )
 }
