@@ -43,7 +43,7 @@ const Account = () => {
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
             transition={{ type: "tween" }}
-            className="fixed w-full max-w-[375px] h-full overflow-y-auto right-0  z-20 top-0 bg-white dark:bg-neutral-900"
+            className="fixed w-full max-w-[375px] h-full overflow-y-auto right-0  z-50 top-0 bg-white dark:bg-neutral-900"
           >
             <div className="h-[66px] flex items-center justify-between px-4 border-b dark:border-neutral-700">
               <h1 className="text-2xl font-bold">Account</h1>

@@ -4,25 +4,30 @@ import React from "react"
 const Card = ({ image, title, category }) => {
   return (
     <div className="border dark:border-neutral-700 rounded-2xl overflow-hidden flex md:flex-col divide-x md:divide-x-0 dark:divide-neutral-700 relative">
-      <div className="absolute bottom-0">
-        <img
+      <div className="absolute -bottom-10">
+        <Image
           src="/radial-pattern.jpg"
+          width={160}
+          height={160}
           className="w-40 dark:invert -left-4 opacity-50"
           alt=""
         />
       </div>
       <div className="relative md:order-2 w-4/12 md:w-[90%] md:mx-auto md:shadow-xl md:bottom-4 dark:border-neutral-700 md:rounded-2xl md:border-t border-neutral-100 bg-white h-full z-30">
-        <img
+        <Image
           src={image}
-          fill="cover"
-          className="w-full h-full md:w-6/12  mx-auto py-4"
+          width={160}
+          height={160}
+          className="w-full h-full md:w-6/12  md:mx-auto py-4"
           alt="deal"
         />
       </div>
       <div className="flex flex-col md:pb-12 justify- relative w-full dark:bg-black -translate-y-1">
         <div className="absolute -right-28 bottom-10 z-10">
-          <img
+          <Image
             src="/circle-pattern.jpg"
+            width={224}
+            height={224}
             className="w-56 dark:invert opacity-70"
             alt=""
           />

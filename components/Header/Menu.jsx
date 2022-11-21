@@ -32,7 +32,7 @@ const Menu = () => {
             animate={{ x: 0 }}
             exit={{ x: "-100%" }}
             transition={{ type: "tween" }}
-            className="fixed max-w-[375px] h-full overflow-y-auto left-0  z-20 top-0"
+            className="fixed max-w-[375px] h-full overflow-y-auto left-0  z-50 top-0"
           >
             <div className="bg-white dark:bg-neutral-900 shadow max-w-[375px] overflow-y-auto h-full">
               <div className="h-[66px] flex items-center justify-between px-4 border-b dark:border-neutral-700">
