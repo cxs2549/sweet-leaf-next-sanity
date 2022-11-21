@@ -3,19 +3,30 @@ import { IoStorefrontOutline } from "react-icons/io5"
 import { MdClose } from "react-icons/md"
 import { useStateContext } from "../context/StateContext"
 
-const EmptyBag = () => (
-  <div
-    id="cartCard"
-    className="flex flex-col items-center justify-center mt-4 mb-12 pt-12 pb-2 max-w-2xl mx-4"
-  >
-    <h1 className="text-3xl font-bold">Your bag is empty</h1>
-    <p className="mt-2">Have an account? Sign in to see your bag</p>
-    <button className="bg-[#02C970] text-white font-bold w-full max-w-[260px] py-2.5 rounded-full mt-2.5">
-      Sign in
-    </button>
-    <img src="/bag.png" className="w-48 mt-5" alt="" />
-  </div>
-)
+const EmptyBag = () => {
+  const { signIn } = useStateContext()
+  const handleSignIn = () => {
+    setTimeout(() => {
+      signIn()
+    }, 1000)
+  }
+  return (
+    <div
+      id="cartCard"
+      className="flex flex-col items-center justify-center mt-4 mb-12 pt-12 pb-2 max-w-2xl mx-4"
+    >
+      <h1 className="text-3xl font-bold">Your bag is empty</h1>
+      <p className="mt-2">Have an account? Sign in to see your bag</p>
+      <button
+        onClick={handleSignIn}
+        className="bg-[#02C970] text-white font-bold w-full max-w-[260px] py-2.5 rounded-full mt-2.5"
+      >
+        Sign in
+      </button>
+      <img src="/bag.png" className="w-48 mt-5" alt="" />
+    </div>
+  )
+}
 
 const NotEmptyBag = () => {
   const { signedIn } = useStateContext()
@@ -41,7 +52,7 @@ const NotEmptyBag = () => {
               </p>
             </div>
           </div>
-          <div className="flex flex-col divide-y">
+          <div className="flex flex-col divide-y dark:divide-neutral-700">
             <BagItem />
             <BagItem />
           </div>

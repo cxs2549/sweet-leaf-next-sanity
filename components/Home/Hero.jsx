@@ -3,7 +3,7 @@ import React from "react"
 
 const Hero = () => {
   return (
-    <div className="py-12 bg-bottom bg-cover flex flex-col md:flex-row md:gap-12 items-center relative justify-center">
+    <div className="py-12 bg-black flex flex-col md:flex-row md:gap-12 items-center relative justify-center">
       <Image fill="cover" src="/hero.jpg" alt="" />
       <div className="flex flex-col items-center justify-center z-10">
         <h1 className="text-8xl font-bold text-green-500 tracking-tighter">
@@ -19,7 +19,7 @@ const Hero = () => {
         </p>
         <a
           href="/shop"
-          className="text-white font-bold bg-green-500 py-3 text-lg rounded-full px-6 mt-4"
+          className="text-white font-bold bg-green-800 py-3 text-lg rounded-full px-6 mt-4"
         >
           Shop early & save
         </a>
